@@ -1,0 +1,2 @@
+# tstest
+TypeScript test
