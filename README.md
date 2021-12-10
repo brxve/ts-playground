@@ -1,2 +1,2 @@
-# tstest
+# ts-playground
 TypeScript test
