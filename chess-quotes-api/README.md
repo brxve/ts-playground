@@ -72,7 +72,7 @@
 ##### Example cURL
 
 > ```javascript
->  curl -X DELETE -H "Content-Type: application/json" http://localhost:3000/randomquote
+>  curl -X GET -H "Content-Type: application/json" http://localhost:3000/randomquote
 > ```
 
 </details>
