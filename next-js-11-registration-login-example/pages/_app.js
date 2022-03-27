@@ -7,6 +7,8 @@ import { useRouter } from 'next/router';
 import { userService } from 'services';
 import { Nav, Alert } from 'components';
 
+import NextNProgress from 'nextjs-progressbar';
+
 function App({ Component, pageProps }) {
     const router = useRouter();
     const [user, setUser] = useState(null);
@@ -51,10 +53,11 @@ function App({ Component, pageProps }) {
     return (
         <>
             <Head>
-                <title>Next.js 11 - User Registration and Login Example</title>
+                <title>bravity.cc</title>
             </Head>
 
-            <div className="">
+            <div>
+                <NextNProgress />
                 <Nav />
                 <Alert />
                 {authorized &&
@@ -62,15 +65,18 @@ function App({ Component, pageProps }) {
                 }
             </div>
 
-            {/* credits */}
-            <div className="text-center mt-4">
-                <p>
-                    <a href="https://jasonwatmore.com/post/2021/08/19/next-js-11-user-registration-and-login-tutorial-with-example-app" target="_top">Next.js 11 - User Registration and Login Tutorial with Example App</a>
-                </p>
-                <p>
-                    <a href="https://jasonwatmore.com" target="_top">JasonWatmore.com</a>
-                </p>
-            </div>
+            <footer>
+                <div className="py-5 bg-slate-800">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 mx-auto mb-2 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14" />
+                        </svg>
+                    </div>
+                    <div className="text-center text-lg text-white bg-slate-800">
+                        <span>Copyright @ 2022</span>
+                    </div>
+                </div>
+            </footer>
         </>
     );
 }

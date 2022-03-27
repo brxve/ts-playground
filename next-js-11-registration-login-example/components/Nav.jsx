@@ -21,10 +21,10 @@ function Nav() {
     if (!user) return null;
     
     return (
-        <nav className="">
-                <NavLink href="/" exact className="">Home</NavLink>
-                <NavLink href="/users" className="">Users</NavLink>
-                <a onClick={logout} className="text-red-600">Logout</a>
+        <nav class="flex justify-center space-x-4">
+            <a href="/" class="font-bold px-3 py-2 text-gray-700 rounded-lg hover:bg-gray-100 hover:text-gray-900">Home</a>
+            <a href="/users" class="font-bold px-3 py-2 text-gray-700 rounded-lg hover:bg-gray-100 hover:text-gray-900">Users</a>
+            <button onClick={() => logout()} class="font-bold px-3 py-2 text-red-700 rounded-lg hover:bg-gray-100 hover:text-gray-900">Logout</button>
         </nav>
     );
 }

@@ -9,12 +9,12 @@
         "dateUpdated": "2021-12-12T20:08:29.649Z"
     },
     {
-        "firstName": "User",
-        "lastName": "2",
+        "firstName": "test",
+        "lastName": "test2",
         "username": "test",
-        "hash": "$2a$10$GkU2JNJIQR7MMWzMoxNk7OrZR1.ZPYo8UPZbakZMiVYzpflepYk/K",
+        "hash": "$2a$10$xcrTjgtdA2o/.OEMgAaNi.13oA/VEf3gsk5GP.fTZsbBqwRk.ghmu",
         "id": 2,
-        "dateCreated": "2021-12-12T20:09:57.012Z",
-        "dateUpdated": "2021-12-12T20:09:57.012Z"
+        "dateCreated": "2021-12-26T23:02:05.567Z",
+        "dateUpdated": "2021-12-26T23:02:05.567Z"
     }
 ]
