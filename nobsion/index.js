@@ -8,7 +8,7 @@ async function main() {
     let $ = cheerio.load(html.data);
 
     $('.listtablediv table tr td:nth-child(2)').toArray().map(item => {
-        console.log($(item).text());
+        console.log($(item).text().toUpperCase() + "USDT");
     });
 }
 
